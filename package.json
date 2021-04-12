@@ -1,0 +1,20 @@
+{
+  "name": "GitHubPullAction",
+  "version": "1.0.0",
+  "description": "ReleaseNotesHub for GitHub Pull Action Trigger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReleaseNotesHub/GitHubPullAction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReleaseNotesHub/GitHubPullAction/issues"
+  },
+  "homepage": "https://github.com/ReleaseNotesHub/GitHubPullAction#readme"
+}
