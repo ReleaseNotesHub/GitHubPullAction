@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 const core = require('@actions/core');
 const github = require('@actions/github');
 
@@ -48,7 +48,7 @@ try {
       'createOnNotFound': '' +  options.CreateOnNotFound + ''                
     };
 
-  var response = await fetch('https://api.releasenoteshub.com/api/pull/PullVersion/' + options.ProjectId, {
+  var response = await fetch('https://rnh-prod-web-as-test.azurewebsites.net/api/pull/PullVersion/' + options.ProjectId, {
       method: 'post',
       body: JSON.stringify(body),
       headers: {'Content-Type': 'application/json',

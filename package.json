@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ReleaseNotesHub/GitHubPullAction#readme",
   "dependencies": {
-    "@actions/core": "^1.6.0"
+    "@actions/core": "^1.6.0",
+    "node-fetch": "^3.0.0"
   }
 }

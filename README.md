@@ -43,9 +43,9 @@ If release does not exist in ReleaseNotesHub and value is true, then create rele
 
 ## Example usage
 
-uses: actions/GitHubPullAction@v1.1
+uses: actions/GitHubPullAction@v1
 with:
-  rnh-apikey: 'c977da13-149c-4f4b-b5d5-bd7d1491853d'
+  rnh-apikey: 'API-c977da13-149c-4f4b-b5d5-bd7d1491853d'
   rnh-projectid: '42d3a80d-b9b7-4998-bef0-1af9f79dfd4c'  
   rnh-release-version: '12.11.5.1'
   rnh-release-publish: 'true'          
