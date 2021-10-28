@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ReleaseNotesHub/GitHubPullAction/issues"
   },
-  "homepage": "https://github.com/ReleaseNotesHub/GitHubPullAction#readme"
+  "homepage": "https://github.com/ReleaseNotesHub/GitHubPullAction#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0"
+  }
 }
