@@ -20,7 +20,7 @@ jobs:
       name: Github action to Pull Release Notes from GitHub for Version
       steps:
       - name: Checkout
-        uses: actions/GitHubPullAction@v1      
+        uses: actions/checkout@v2    
       - name: ReleaseNotesHub Pull step      
         uses: ./ # Uses an action in the root directory
         id: GitHubPullAction
