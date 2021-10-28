@@ -48,16 +48,14 @@ try {
       'createOnNotFound': '' +  options.CreateOnNotFound + ''                
     };
 
-  var response = await fetch('https://rnh-prod-web-as-test.azurewebsites.net/api/pull/PullVersion/' + options.ProjectId, {
+  fetch('https://rnh-prod-web-as-test.azurewebsites.net/api/pull/PullVersion/' + options.ProjectId, {
       method: 'post',
       body: JSON.stringify(body),
       headers: {'Content-Type': 'application/json',
       'Accept': 'application/json',
       'Authorization': 'ApiKey ' + options.RnhApiKey}
-  });
-  var data = await response.stringify();
-  console.log(data);  
-
+    })
+    .then(res => console.log(res.stringify()));
 } catch (error) {
   core.setFailed(error.message);
 }
