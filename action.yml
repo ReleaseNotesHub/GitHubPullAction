@@ -1,13 +1,39 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'ReleaseNotesHub Pull Rquest For Version'
+description: 'Github action to Pull Release Notes from GitHub for Version'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  rnh-apikey:
+    description: 'ReleaseNotesHub API key'
     required: true
-    default: 'World'
+  rnh-projectid:
+    description: 'Project Id'
+    required: true       
+  rnh-release-version:
+    description: 'Release Version'
+    required: true       
+  rnh-release-name:
+    description: 'Release name'
+    required: false   
+  rnh-release-description:
+    description: 'Release rescription'
+    required: false       
+  rnh-release-publish:
+    description: 'Publish release'
+    required: false   
+    default: false
+  rnh-release-ignoreifexists:
+    description: 'If release exists then do nothing'
+    required: false
+    default: false
+  rnh-release-createonnotfound:
+    description: 'Create release in ReleaseNotesHub if release does not exist'
+    required: false   
+    default: true                 
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  payload:
+    description: 'Pull Details'
+branding:
+  icon: "git-pull-request"
+  color: "purple"    
 runs:
   using: 'node12'
   main: 'index.js'
